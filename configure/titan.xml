@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<titan-configuration
+	name="SIS Biblioteca"
+	description="Sistema de Biblioteca"
+	url="http://localhost/biblioteca/"
+	e-mail="mail@mail.com"
+	login-url="http://localhost/biblioteca/titan.php?target=login"
+	core-path="../titan/core/"
+	repos-path="../titan/repository/"
+	cache-path="cache/"
+	doc-path="doc/"
+	debug-mode="true"
+	session="fsfsdfs1f5s15df15sdf1sd5"
+	language="pt_BR"
+	use-chat="false"
+	all-sections="true"
+	only-firefox="false">
+	
+	<database
+		sgbd="PostgreSQL"
+		host="localhost"
+		name="biblioteca"
+		user="postgres"
+		port="5432"
+		password="root"
+		schema="titan"
+	/>
+	
+	<security 
+		xml-path="configure/security.xml"
+		hash="hdhgdfghndfugjfdi5454654gdfgdf"
+		timeout="1800"
+	/>
+	
+	<search
+		hash="fhjigsgisd54151748dvdfgvdfvdfv"
+		timeout="15552000"
+	/>
+	
+	<archive 
+		xml-path="configure/archive.xml"
+		data-path="file/"
+	/>
+	
+	<business-layer 
+		xml-path="configure/business.xml" 
+	/>
+	
+	<skin
+		logo=""
+	/>
+	
+	<mail
+		xml-path="configure/mail.xml"
+	/>
+	
+	<version-control
+		schema="version"
+	/>
+
+	<log
+		db-path="cache/log.db"
+		xml-path="configure/log.xml"
+	/>
+	
+	<type
+		xml-path="configure/type.xml"
+	/>
+
+	<lucene
+		index-path="cache/lucene"
+	/>
+	
+	<schedule
+		hash=""
+	/>
+	
+	<alert
+		xml-path="configure/alert.xml"
+	/>
+</titan-configuration>

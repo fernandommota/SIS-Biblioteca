@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<form table="biblioteca.livro" primary="livroid">
+	<go-to flag="success" action="[default]" />
+	<go-to flag="fail" action="[same]" />
+
+        <group>
+            <field type="Integer"  column="livroid" label="Id" />    
+            <field type="String"  column="livronome" label="Nome" />
+            <field type="Select" column="_autor" label="Autor"  link-table="biblioteca.autor" link-column="autorid" link-view="[autornome]" required="true"/>     
+        </group>
+  
+</form>

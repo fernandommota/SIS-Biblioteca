@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<view table="biblioteca.livro" primary="livroid" paginate="15">
+
+        <field type="Integer" column="livroid" label="Id"/>
+        <field type="String" column="livronome" label="Nome" />
+        <field type="Select" column="_autor" label="Autor"  link-table="biblioteca.autor" link-column="autorid" link-view="[autornome]"/>      
+
+	<icon action="view" image="view.gif" label="Visualizar Autor" default="true" />
+	<icon action="edit" image="edit.gif" label="Editar Autor" />
+        <icon action="delete" image="delete.gif" label="Apagar Autor" />       
+</view>
+<search table="biblioteca.livro">
+	
+        <field type="Integer" column="livroid" label="Id"/>
+        <field type="String" column="livronome" label="Nome" />
+        <field type="Select" column="_autor" label="Autor"  link-table="biblioteca.autor" link-column="autorid" link-view="[autornome]"/>      
+
+</search>

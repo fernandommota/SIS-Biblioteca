@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<view table="biblioteca.autor" primary="autorid" paginate="15">
+
+        <field type="Integer" column="autorid" label="Id"/>
+        <field type="String" column="autornome" label="Nome" />
+
+	<icon action="view" image="view.gif" label="Visualizar Autor" default="true" />
+	<icon action="edit" image="edit.gif" label="Editar Autor" />
+        <icon action="delete" image="delete.gif" label="Apagar Autor" />       
+</view>
+<search table="biblioteca.autor">
+	
+        <field type="Integer" column="autorid" label="Id"/>
+        <field type="String" column="autornome" label="Nome" />
+
+</search>

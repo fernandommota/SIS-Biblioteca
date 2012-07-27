@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<view table="biblioteca.estudante" primary="estudanteid" paginate="15">
+
+        <field type="Integer" column="estudanteid" label="Id"/>
+        <field type="String" column="estudantenome" label="Nome" />
+        
+       	<icon action="view" image="view.gif" label="Visualizar estudante" default="true" />
+	<icon action="edit" image="edit.gif" label="Editar estudante" />
+        <icon action="delete" image="delete.gif" label="Apagar estudante" />       
+</view>
+<search table="biblioteca.estudante">
+	
+        <field type="Integer" column="estudanteid" label="Id"/>
+        <field type="String" column="estudantenome" label="Nome" />
+
+</search>

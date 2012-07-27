@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<form table="biblioteca.autor" primary="autorid">
+	<go-to flag="success" action="[default]" />
+	<go-to flag="fail" action="[same]" />
+
+        <group label="Dados do Autor">
+            <field type="String" column="autornome" label="Nome"/>
+        </group>
+
+</form>

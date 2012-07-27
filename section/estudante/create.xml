@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<form table="biblioteca.estudante" primary="estudanteid">
+	<go-to flag="success" action="[default]" />
+	<go-to flag="fail" action="[same]" />
+
+        <group label="Novo estudante">
+            <field type="String"  column="estudantenome" label="Nome" required="true"/>
+                        
+        </group>
+
+</form>

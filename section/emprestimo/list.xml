@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<view table="biblioteca.emprestimo" primary="emprestimoid" paginate="15">
+
+       <field type="Integer"  column="emprestimoid" label="Id" />
+       <field type="Date"  column="emprestimodata" label="Data" />
+       <field type="Select" column="_livro" label="Livro"  link-table="biblioteca.livro" link-column="livroid" link-view="[livronome]" required="true"/>     
+       <field type="Select" column="_estudante" label="Estudante"  link-table="biblioteca.estudante" link-column="estudanteid" link-view="[estudantenome]" required="true"/>     
+	<icon action="view" image="view.gif" label="Visualizar Empréstimo" default="true" />
+	<icon action="edit" image="edit.gif" label="Editar Empréstimo" />
+        <icon action="delete" image="delete.gif" label="Apagar Empréstimo" />       
+</view>
+<search table="biblioteca.emprestimo">
+	<field type="Integer"  column="emprestimoid" label="Id" />
+       <field type="Date"  column="emprestimodata" label="Data" />
+       <field type="Select" column="_livro" label="Livro"  link-table="biblioteca.livro" link-column="livroid" link-view="[livronome]" search="livro.xml" required="true"/>     
+       <field type="Select" column="_estudante" label="Estudante"  link-table="biblioteca.estudante" link-column="estudanteid" link-view="[estudantenome]" search="estudante.xml" required="true"/>     
+	
+</search>

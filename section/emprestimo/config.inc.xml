@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<action-mapping>
+	<permission
+		name="ACCESS_ALL"
+		label="Pode acessar todos os Empréstimos."
+	/>
+	
+	<action
+		name="list"
+		label="Listar Empréstimo"
+		default="true"
+		description="">
+		<menu action="create" />
+		<menu function="search" />
+	</action>
+
+	<action
+		name="view"
+		label="Visualizar Empréstimo"
+		description="">
+		<menu action="list" />
+		<menu action="edit" />
+		<menu function="print" />
+	</action>
+
+	<action
+		name="create"
+		label="Criar Novo Empréstimo"
+		description="">
+		<menu function="save" />
+		<menu action="list" image="close.png" />
+	</action>
+
+	<action
+		name="edit"
+		label="Editar Empréstimo"
+		description="">
+		<menu function="save" />
+		<menu action="list" image="close.png" />
+	</action>	
+		
+	<action
+		name="delete"
+		label="Apagar Empréstimo"
+		description="">
+		<menu function="delete" />
+		<menu action="list" image="close.png" />
+	</action>
+	
+</action-mapping>

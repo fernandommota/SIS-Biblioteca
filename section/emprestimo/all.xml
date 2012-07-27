@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<form table="biblioteca.emprestimo" primary="emprestimoid">
+	<go-to flag="success" action="[default]" />
+	<go-to flag="fail" action="[same]" />
+
+        <group>
+            <field type="Integer"  column="emprestimoid" label="Id" />    
+            <field type="Date"  column="emprestimodata" label="Data" />
+            <field type="Select" column="_livro" label="Livro"  link-table="biblioteca.livro" link-column="livroid" link-view="[livronome]" required="true"/>     
+            <field type="Select" column="_estudante" label="Estudante"  link-table="biblioteca.estudante" link-column="estudanteid" link-view="[estudantenome]" required="true"/>     
+        </group>
+  
+</form>
